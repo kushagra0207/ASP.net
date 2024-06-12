@@ -9,4 +9,5 @@ The Saving file Extension will be .cs
 Asp.net - Active Server Pages
 
 Console.ReadLine() for reading the input
-
+- The Console.ReadLine() method returns a string. Therefore, you cannot get information from another data type, such as int.
+- int age = Convert.ToInt32(Console.ReadLine());
