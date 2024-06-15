@@ -1,0 +1,38 @@
+C sharp Interview Questions
+
+
+
+C# is a compiled language. To run an application, normally a developer compiles C# source code into intermediate language (IL).
+
+
+
+
+12.	What are dynamic type variables in C#?
+dynamic variable = 1;  // Initially an integer
+Console.WriteLine(variable);  // Output: 1
+
+variable = "Hello, World!";  // Now a string
+Console.WriteLine(variable);  // Output: Hello, World!
+
+variable = new { Name = "John", Age = 30 };  // Now an anonymous type
+Console.WriteLine(variable.Name);  // Output: John
+
+
+
+
+
+
+
+13.	Diirence between is Boxing and Unboxing? 
+
+// int (value type) is created on the Stack
+int stackVar = 12; 
+
+// Boxing = int is created on the Heap (reference type)
+object boxedVar = stackVar; 
+
+// Unboxing = boxed int is unboxed from the heap and assigned to an int stack variable
+int unBoxed = (int)boxedVar;  
+
+
+14.	What is ASP.Net?
