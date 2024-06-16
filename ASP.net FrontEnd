@@ -1,0 +1,12 @@
+ASP stands for Active Server Pages
+
+ASP is a development framework for building web pages. ASP and ASP.NET are server side technologies. 
+ASP.NET pages have the extension .aspx
+
+ASP.NET Web Pages is an SPA application model (Single Page Application).
+
+dim for VB.net and @Code  .. End Code  - @
+
+
+
+@RenderPage("header.cshtml")
