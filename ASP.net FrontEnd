@@ -10,3 +10,27 @@ dim for VB.net and @Code  .. End Code  - @
 
 
 @RenderPage("header.cshtml")
+@RenderBody("header.cshtml")
+
+.NET - Network Enabled Technologies
+
+
+Common Language Runtime - ek esa platform Woh her cheej kko read kr paye her language ko samaj paye 
+have necessary tools garbage collection
+exceptional handling
+
+Code Behind Mode
+
+Seperate file for both coding and designing
+
+aspx.cs or aspx.vb
+
+State Management in Asp.net through HTTP protocol
+
+Caching - fast memory aur iska main kam yeh hai ki jab koi common css ya common component ho uske
+
+Those component which are reused again and again are stored in cache memory through process of caching
+
+IIS - Server  - Internet Information Server
+
+VB.NET - Visual Basic
