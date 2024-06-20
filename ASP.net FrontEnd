@@ -15,7 +15,7 @@ dim for VB.net and @Code  .. End Code  - @
 .NET - Network Enabled Technologies
 
 
-Common Language Runtime - ek esa platform Woh her cheej kko read kr paye her language ko samaj paye 
+Common Language Runtime - Allows to execute different different programming langugae files and codes
 have necessary tools garbage collection
 exceptional handling
 
@@ -34,3 +34,28 @@ Those component which are reused again and again are stored in cache memory thro
 IIS - Server  - Internet Information Server
 
 VB.NET - Visual Basic
+
+
+framework contains a large number of class libraries known as Framework Class Library (FCL).
+The software programs written in .NET are executed in the execution environment,
+which is called CLR (Common Language Runtime). 
+These are the core and essential parts of the .NET framework.
+
+
+
+CLR (Common Language Runtime)
+It is a program execution engine that loads and executes the program. 
+It converts the program into native code. 
+It acts as an interface between the framework and operating system. 
+It does exception handling, memory management, and garbage collection. 
+Moreover, it provides security, type-safety, interoperability, and portablility. A list of CLR components are given below:
+
+
+ADO.NET
+ADO.NET is a module of .Net Framework, which is used to establish a connection between application and data sources. 
+Data sources can be such as SQL Server and XML. 
+ADO .NET consists of classes that can be used to connect, retrieve, insert, and delete data.
+
+
+LINQ (Language Integrated Query)
+It is a query language, introduced in .NET 3.5 framework. It is used to make the query for data sources with C# or Visual Basics programming languages.
