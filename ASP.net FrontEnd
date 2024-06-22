@@ -101,6 +101,29 @@ Application
 Cache
 
 
+What is Assembly and what are its types??
+
+An assembly is a collection of types and resources that are built to work together and form a logical unit of functionality.
+Assemblies take the form of executable (.exe) or dynamic link library (. dll) files, and are the building blocks of . NET applications
+
+main function - .exe and main files - collection of code
+dll - dynamic link library  - collection of classes and methods
+
+They provides CLR - common language Runtime
+
+Implemented in .exe or .dll
+they are loaded into the memory when needed.
+
+GAC - Global Assembly caches shares the Assemblies between the application.
+
+Types of Assemblies - 
+Private - Seperate assembly copy
+public - need not to be copy, They have already public key and it is known as shared assembly
+Satellite - used for deployment of culture and language specific resources
+You can create 1 webpage in different language this is called satellite assembly langugae.
+
+
+
 
 
 
