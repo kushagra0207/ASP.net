@@ -123,6 +123,84 @@ Satellite - used for deployment of culture and language specific resources
 You can create 1 webpage in different language this is called satellite assembly langugae.
 
 
+What is Caching and types of caching?
+Caching is a mechanism that stores frequently accessed data in memory so that when the same data is needed another time, 
+it can be directly obtained from the memory instead of the database. 
+This facilitates high page response time by reducing the time it takes to render the page.
+ a storage location used to temporarily store data used by servers, apps, and browsers to speed load times
+
+InMemory Caching and Distributed Caching
+In-memory caching uses server memory to store cached data. 
+This type of caching is suitable for a single server or multiple servers using session affinity.
+Session affinity is also known as sticky sessions. 
+Session affinity means that the requests from a client are always routed to the same server for processing.
+
+Distributed Cache
+Use a distributed cache to store data when the app is hosted in a cloud or server farm.
+The cache is shared across the servers that process requests. 
+A client can submit a request that's handled by any server in the group if cached data for the client is available. 
+ASP.NET Core works with SQL Server, Redis, and NCache distributed caches.
+
+
+what is mvc in asp.net
+The Model-View-Controller (MVC) architectural pattern separates an application into three main components: 
+the model, the view, and the controller. The ASP.NET MVC framework provides an alternative to the ASP.NET
+Web Forms pattern for creating MVC-based Web applications.
+
+
+Diffrence between View and Partial  in asp.net
+
+
+What is a garbage collector in C#?
+GC (Garbage collector) makes a trip to the heap and collects all objects that are no longer used by the application and then makes them free from memory.
+
+
+Does ViewState affect performance?
+How can you detect if a viewstate has been tampered?
+
+
+Authentication Filter
+Authorization Filter
+Action filter Attribute class
+Result Filter
+Exceptional Filter
+
+
+Which class is used to create custom filters
+ the class used to create custom filters is the ActionFilterAttribute class. 
+
+
+What is Collections in .NET
+Collection types represent different ways to collect data, such as hash tables, queues, stacks, bags, dictionaries, and lists.
+They are used to store, manipulate and retrieve aggregate data. 
+We will distinguish collections in the following ways: Linear (arrays, lists, stacks, queues) Hierarchical (various kinds of trees)
+
+Non-generic collections
+Every element in the non-generic collection is stored as a System.Object type.(System.Collections)
+ArrayList, Stack, Queue, HashTable, and so on.
+
+Generic General structure defined by user
+These are defined in System.Collections.Generic namespace.
+Examples
+Generic list, generic queue, and so on. They are template-based versions of their counterparts.
+
+
+Features of ADO.NET 
+ADO.NET has many features associated with it. Some of them are-
+
+_ The applications that are built using ADO.NET can be modeled in separate layers. And this makes the code and application maintainable. 
+ 
+The data architecture is scalable as it uses only disconnected data on the server, and since everything is handled on the client side, performance is enhanced. 
+And this also increases scalability.
+ 
+Data is transferred from one data source to another, represented internally in XML format. And this makes the interoperability of data possible.
+ 
+_ ADO.NET supports access to many database systems, such as SQL and Oracle. And this helps users to work with different databases consistently.
+ 
+_ ADO.NET also allows users to work with database transactions and ensures data integrity and consistency. ADO.NET supports both local and distributed transactions.
+ 
+The programming style of ADO.NET is straightforward. In ADO.NET programs, user-defined words are used to construct statements or to evaluate expressions.
+ 
 
 
 
