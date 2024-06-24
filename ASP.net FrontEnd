@@ -200,6 +200,13 @@ _ ADO.NET supports access to many database systems, such as SQL and Oracle. And 
 _ ADO.NET also allows users to work with database transactions and ensures data integrity and consistency. ADO.NET supports both local and distributed transactions.
  
 The programming style of ADO.NET is straightforward. In ADO.NET programs, user-defined words are used to construct statements or to evaluate expressions.
+
+
+Passing of data from controller to view using ViewData and ViewBag
+
+ViewData - Stores as Key and Value 
+We can pass Key in my Programming aspx and use it with the following key in the index.html page
+
  
 
 
