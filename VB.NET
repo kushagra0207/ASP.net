@@ -5,3 +5,123 @@ The VB.NET stands for Visual Basic. Network Enabled Technologies. It is a simple
 Therefore, everything in the VB.NET language is an object, including all primitive data types (Integer, String, char, long, short, Boolean, etc.),
 user-defined data types, events, and all objects that inherit from its base class
 . It is not a case sensitive language, whereas, C++, Java, and C# are case sensitive language.
+
+
+Dim Variable_Name as DataType  = 10;
+ Dim b As Byte = 1  
+ Dim num As Integer = 5  
+
+Lvalue: It is an lvalue expression that refers to a memory location for storing the address of a variable. An lvalue is a variable that can appear to the left or right of the assignment operator to hold values
+
+Rvalue: It is an rvalue expression that is used to store a value in some address of memory. An rvalue can appear only on 
+the right- hand side because it is a value of the variable that defines on the right-hand side.
+
+Const constname As datatype = value  
+
+Procedure (local) scope
+A local variable is a type of variable defined within a procedure scope, block, or function.
+It is available with a code inside the procedure, and it can be declared using the Dim or
+static statement. These variables are not accessible from outside of the local method
+
+
+Imports System
+
+Public Class Test
+    Public Shared Sub Main()
+        Dim asa As Integer = 10
+        If asa = 10 Then
+            System.Console.WriteLine(asa)
+        End IfImports System
+
+
+
+
+Public Class Test
+    Public Shared Sub Main()
+        
+        
+        dim xx as Integer = 1
+        
+        If xx=10 then
+           Console.WriteLine(xx)
+        Else
+           Console.WriteLine("hi")
+        End If
+    End Sub
+End Class
+        System.Console.WriteLine("ke")
+    End Sub
+End Class
+
+
+
+
+
+Do  
+[ Statements to be executed]  
+Loop While Boolean_expression  
+
+
+
+
+
+For variable_name As [ DataType ] = start To end [ Step step ]  
+[ Statements to be executed ]  
+Next  
+
+
+
+
+
+Imports System
+
+Public Class Test
+    Public Shared Sub Main()
+        For va As Integer = 1 To 10 Step 1
+        Console.WriteLine(va)
+
+Next  
+    End Sub
+End Class
+
+here step step refers to the i * 2
+
+
+
+
+
+
+
+Dim An_array() As Integer = {1, 2, 3, 4, 5}  
+        Dim i As Integer 'Declare i as Integer  
+  
+        For Each i In An_array  
+            Console.WriteLine(" Value of i is {0}", i)  
+        Next  
+        Console.WriteLine("Press any key to exit...")  
+
+
+
+
+
+While [condition]  
+    [ Statement to be executed ]  
+End While  
+
+
+
+Dim num As Integer() = New Integer(5) { }  
+Dim num As Integer() = New Integer(5) {1, 2, 3, 4, 5, 6}   
+Initialize an array with 5 elements that indicates the size of an array  
+Dim arr_name As Integer() = New Integer() {5, 10, 5, 20, 15}  
+Declare an array  
+Dim array1 As Char()  
+array1 = New Char() {'A', 'B', 'C', 'D', 'E'}  
+
+
+
+
+
+
+
+
