@@ -119,6 +119,10 @@ Dim array1 As Char()
 array1 = New Char() {'A', 'B', 'C', 'D', 'E'}  
 
 
+dim arr() as Integer = {1,2,3,1,2};
+
+Will be best way to make the array
+
 
 
 
