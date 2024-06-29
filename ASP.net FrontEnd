@@ -249,6 +249,15 @@ C# - Compiled language, pass by valye
 VB.NET - Compiled language, pass by value
 
 
+Var  - check error on compile time - variables are checked at compile time
+var x = 10;
+ x = "her"; // not allowed already above line is compiled
+
+dynamic - check variable at run time - variables are checked at run time
+
+dynamic x = 10;
+ x = "her"; // allowed
+
 
  
 
