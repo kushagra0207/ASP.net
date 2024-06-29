@@ -55,6 +55,7 @@ ADO.NET
 ADO.NET is a module of .Net Framework, which is used to establish a connection between application and data sources. 
 Data sources can be such as SQL Server and XML. 
 ADO .NET consists of classes that can be used to connect, retrieve, insert, and delete data.
+ADO.NET handels mainly database.
 
 
 LINQ (Language Integrated Query)
@@ -63,8 +64,11 @@ It is a query language, introduced in .NET 3.5 framework. It is used to make the
 
 CLS - Common Language Specification
 It is a set of rules and restrictions which every language must have to follow under the .NET Framwork.
-1- Dont Use Case Sensitive and casing
+1- Dont Use Case Sensitive and casing matlab aap not casesensitive ko follow kro
+
 2- Dont Use Pointers 
+
+3 - Only CLS-compliant primitive types should be exposed. For example, int, float, double, and string are CLS-compliant types.
 
 
 CTS - Common type system - guidelines for declaring, using, and managing data types at runtime. 
@@ -206,6 +210,36 @@ Passing of data from controller to view using ViewData and ViewBag
 
 ViewData - Stores as Key and Value 
 We can pass Key in my Programming aspx and use it with the following key in the index.html page
+
+Page LifeCycle of ASP.NET
+Page Request 
+Page Start - Request and Response are created
+Page Initialization - textbox and checkbox initialization - all page controls initialization
+Page load - Page is load with default values and behaviours like textbox have default name and others
+validation check - All validator like required and form fill will takes place. make sure non of the box will remains empty check kro ki sab kuch fill hai ki nhi
+check form values and if they are wrong they will show error message and if they7 are correct they send data for the next process
+
+Page Event Handling - 
+(handling of postback event) it will trigerred when same page is loading again after clicking on the submit button
+
+render -  compilation of page, useer ko samaj aye page ke bare me
+Unbound - free from the message like unwanted object
+
+https://www.guru99.com/asp-net-intro-life-cycle-hello.html
+
+
+ASP.Net Lifecycle?
+https://www.youtube.com/watch?v=nKr28ktyHOA
+
+
+
+User Controls Examples / Custom Control Example is same 
+like ki apne ek component bana liya abh use here page me add krdo ya like
+header aur footer ki tarah use use krlo
+component ek but use hoga her jagah
+
+
+
 
  
 
