@@ -239,6 +239,15 @@ header aur footer ki tarah use use krlo
 component ek but use hoga her jagah
 
 
+Common type system:
+CTS provides guidelines for declaring, using, and managing data types at runtime. 
+It offers cross-language communication. For example, VB.NET has an integer data type, 
+and C# has an int data type for managing integers. After compilation, Int32 is used by both data types. 
+So, CTS provides the data types using managed code. A common type system helps in writing language-independent code.
+
+C# - Compiled language, pass by valye
+VB.NET - Compiled language, pass by value
+
 
 
  
