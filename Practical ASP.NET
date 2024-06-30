@@ -1,0 +1,53 @@
+static websites and dynamic websites
+dynamic websites have user interaction and static website does not have any user interaction.
+
+IIS - Internet Information Server Which is a server which helps to debug code and present to the UI/ screen of the user and vice versa.
+basically it is for ki aap C# or VB.NET ko isme execute krke isko isi server execute krne ke bad aap browser me isko display kr sakte ho
+
+
+Framework class library - FCL
+
+Code behind mode
+
+
+Every labels, checkboxes have methods, events and property
+Every labels and controllers have inherited from their base class and object is created here for further use
+
+
+
+button - properties ko change krna like color, appearacne, style and more
+methods - its like operations
+when I filled value with my name in google form after when I hit submit the method should clear the label / box also it should focus on the next check box
+these are the types of the methods we can handle
+
+Event like onclick ki yeh change ho jaye woh change ho jaye and all stufff
+
+events matlab mere button click krne ke bad red color green color ban jaye and so so..
+
+
+In a textbox all data are always stored in the form of string, if you want to convert it in integer you have to go with int32
+Convert.ToInt32(numString);
+
+Will work smoothly in both the two languages
+C sharp and VB.NET
+
+
+Runat = "server" meaning server side control hai iska
+server side control
+
+Example to use the property and change the value of a box at runtime
+
+TextBox.BackColor = System.Drawing.Color.Yellow;
+TextBox.BorderStyle = BorderStyle.Solid;
+
+
+
+
+
+
+
+
+
+
+
+
