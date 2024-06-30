@@ -41,6 +41,24 @@ TextBox.BackColor = System.Drawing.Color.Yellow;
 TextBox.BorderStyle = BorderStyle.Solid;
 
 
+Text Box Methods -
+
+1) For Focus 
+2) For Convert Text data into String
+
+TextBox Events 
+
+Text Changed - It will work when we change the value of text and when we change the value of text it calls.
+
+Changing run time properties - 
+TextBox1.Font.Italic = true;
+
+
+TextBox1.ForeColor = System.Drawing.Color.Red;
+
+Properties have different icons and methods have different icons
+
+they all have different different shapes and icons
 
 
 
