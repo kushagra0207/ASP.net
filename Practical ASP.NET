@@ -61,6 +61,82 @@ Properties have different icons and methods have different icons
 they all have different different shapes and icons
 
 
+After all methods there is brackets, ();
+
+her method ke bad (); bracket is compulsory....
+TextBox2.Focus();
+
+
+All proerties like color, border, width are same for all controllers
+
+Group name matab like class in html
+
+AdRotator banner control in ASP.NET ->  It uses XML
+XML me khud ke tags ham bana sakte hai, Its simple then html
+It's easy then html
+
+Response.Redirect("Page jaha navigate krna hai"); Yeh url aur file per redirect krta hai, isme change hone ke bad url badal jayega
+also
+Server.Transfer("Page to show"); yeh page ko server per lata hai udha ker, isme url kabhi bhi change nhi hoga
+(Home page per kisi dusri file ka data leker ana)
+
+State Management in ASP.NET
+
+Two types 
+Cliend side
+Cookies
+Query string
+hidden fields - use label to share data but its visibility should be 0
+
+
+ViewState - 
+(FOR POST Request - server se routed hoker data ana) - for this submit button per click kro kavel, no any type of get request from the server
+to transfer data and show to the user first and then send to the server 
+Iski speciality - page reload ho jayega tab bhi me wapas se pahele wala data bhej dunga - viewState
+ViewState ko use krne ke bad chahe page kitni bar bhi load ho ham uski pahele wale data ko back la sakte hai
+(take user data and store data in the variable (programming variable) and use that variable later to return back its value.
+
+e.g - ViewState["myvalue"] = TextBox1.Text.ToString(); <- isme ham myvalue ko as a key use kr rahe hai aur value store kr rahe hai for future
+TextBox1.text = ViewState["myvalue"].ToString(); <- to retrive the value by using the key
+Post request ke bad hi kavel data wapas laya ja sakta hai
+is wale case me sabse pahele hamne value server me dali hai fir retrive kri hai
+
+
+
+
+ager me janbhuj ker url per entre kru aur wapas reload kru us case me - GET request call hogi
+ViewState ki value null ho jayegi
+and reset ho jayega sab kuch
+
+
+Server side
+Session - isme her user ke liye alag alag files banegi ki kon user kab aaya aur uski kya demands thi
+Application - it is same as session and its files also store on the server but it will use only single file and all the clients information will be stored in that single file only.
+Caching
+
+
+Events are like page load and page unload
+Postback - Post server
+
+IsPostBack - isse ham pata laga sakte hai ki page paheli bar load ho raha hai ya submit per wapas load ho raha hai
+IsPostBack == true tabhi hoga jab form 2 bar load hoga(Submit hoga)
+1 bar load hone per iski value false rahegi
+
+
+QueryString - Client side state management process
+
+Response.Redirect("WebForm2.aspx?myname=" + value); <- to send the query string - myname acts as a passkey
+Request.QueryString["passkey"]; <- At the receiving end
+
+
+
+
+
+
+
+
+
+
 
 
 
