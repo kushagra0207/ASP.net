@@ -231,6 +231,14 @@ After action method and before view
 2 - Result and page rendering
 
 
+what is connection pooling
+Connection pooling is a technique used to manage database connections efficiently in a high-performance application. 
+It involves maintaining a pool of active database connections that can be reused by different parts of the application,
+instead of creating and closing a new connection every time a database operation is performed. 
+This reduces the overhead associated with opening and closing connections, thereby improving the performance and scalability of the application.
+Connections are always created in the starting of the application
+
+
 
 
 
