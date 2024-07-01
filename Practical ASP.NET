@@ -28,6 +28,9 @@ events matlab mere button click krne ke bad red color green color ban jaye and s
 In a textbox all data are always stored in the form of string, if you want to convert it in integer you have to go with int32
 Convert.ToInt32(numString);
 
+or .ToString(); method
+or Integer.parse method 
+
 Will work smoothly in both the two languages
 C sharp and VB.NET
 
@@ -87,6 +90,7 @@ Cliend side
 Cookies
 Query string
 hidden fields - use label to share data but its visibility should be 0
+ViewState
 
 
 ViewState - 
