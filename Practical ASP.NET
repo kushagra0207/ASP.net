@@ -105,6 +105,20 @@ TextBox1.text = ViewState["myvalue"].ToString(); <- to retrive the value by usin
 Post request ke bad hi kavel data wapas laya ja sakta hai
 is wale case me sabse pahele hamne value server me dali hai fir retrive kri hai
 
+Performance: Performance is not good if we use a large amount of data 
+because View State is stored in the page itself and storing a large value can cause the page to be slow.
+It reserve the value in the postback request.
+
+Detecting ViewState Tampering
+To ensure that the ViewState has not been tampered with, ASP.NET provides a built-in mechanism using ViewState 
+MAC (Message Authentication Code). Here’s how you can detect and prevent tampering:
+
+ViewState MAC: By default, ViewState is protected with a MAC. 
+This ensures that any tampering with the ViewState data will be detected when the data is posted back to the server. 
+If the MAC does not match, ASP.NET throws an exception.
+
+
+
 
 
 
@@ -195,6 +209,27 @@ Client Side Validatir
 
 Methods - Control to validate - kisko check krna hai kisko validate krna hai\
 ager woh galat data enter krta hai to kya message bhejna hai
+
+
+View: Rendered through controller actions (e.g., return View()).
+Partial View: Rendered within other views using helper methods (e.g., Html.Partial()).
+
+Part of View is called Partial View
+
+
+MVC Filter
+
+Client -> Route -> Controller -> Filter/Middlewware -> Action -> Middleware/filter -> View
+
+Before action method we have filters 
+1 - Authentication
+2 - Authorization
+
+
+After action method and before view
+1 - Exception and error handlinng
+2 - Result and page rendering
+
 
 
 
