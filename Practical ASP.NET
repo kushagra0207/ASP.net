@@ -232,11 +232,59 @@ After action method and before view
 
 
 what is connection pooling
+Connection to a databasse in expensuive
 Connection pooling is a technique used to manage database connections efficiently in a high-performance application. 
 It involves maintaining a pool of active database connections that can be reused by different parts of the application,
 instead of creating and closing a new connection every time a database operation is performed. 
 This reduces the overhead associated with opening and closing connections, thereby improving the performance and scalability of the application.
 Connections are always created in the starting of the application
+
+Connection object pool maintained the starting connection and let the already existed connection reuse again and again
+it also maintains that no new connection will be created
+
+Initialization: When the application starts, a pool of database connections is created and maintained in memory.
+Request for Connection: When an application needs to perform a database operation, it requests a connection from the pool.
+Reuse Connection: If a connection is available in the pool, it is reused for the new operation. If no connection is available, a new one is created and added to the pool.
+Release Connection: After the operation is completed, the connection is returned to the pool rather than being closed.
+Management: The pool manager handles the creation, reuse, and destruction of connections based on configurable parameters like the maximum number of connections, idle timeout, etc.
+
+
+
+Most Imp part of ASP.Net - Part of ADO.NET
+DataSet - 
+When we create a website and connect it with the Database, these three plays an important role
+It is like mini database which have fast cache and responds fastly
+A DataSet is an in-memory representation of data that provides a consistent relational programming model regardless of the data source. It can hold multiple tables and relationships between them.
+Can hold multiple tables (like a mini-database).
+Supports relations between tables.
+Supports constraints like primary keys and foreign keys.
+Can be serialized to XML for storage or transfer.
+
+
+DataSet - 
+It takes/fetch data from the data from the data source or database
+and
+DataAdapter - A DataAdapter acts as a bridge between a DataSet and a data source for retrieving and saving data. It uses commands to retrieve data from the database and populate the DataSet
+DataReader - 
+ A DataReader provides a way of reading a forward-only stream of data rows from a data source. It is efficient for reading data but does not support updating or navigation.
+
+Use Case: DataReader is used when you need to quickly and efficiently read data in a forward-only, read-only manner.
+
+Features:
+
+Provides fast, forward-only, read-only access to data.
+Uses less memory compared to DataSet since it doesn't store data in memory.
+Typically used with the ExecuteReader method of a SqlCommand object.
+
+
+Difference between Web API and WCF?
+WCF - Windows Communication Foundation - for creating rest services
+lot of configuration is needed to turn a WCF service into a REST Service. and specially it takes lot of configuration for soap then more in rest
+
+WCF is good for Message queue, duplex communication, end to end message security, one way messaging.
+It works on lt of protocol like TCP/IP/Http/Https
+WEB APi is already designed for rest services.
+
 
 
 
