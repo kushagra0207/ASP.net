@@ -133,6 +133,74 @@ Response.Redirect("WebForm2.aspx?myname=" + value); <- to send the query string 
 Request.QueryString["passkey"]; <- At the receiving end
 
 
+Session State in ASP.Net
+
+if(userpassword==correct){
+Session["username"] = TextBox1.Text.ToString(); // creating a user session
+Response.Redirect("Welcome.aspx"); // after successful password checked we proceed with the redirect to resources.
+
+}
+<- creating a session for the user
+Session["username"] = TextBox1.Text.ToString();
+e.g Session["username"] = "Kushagra Gupta";
+
+
+Ager koi jabardati resource ke page ko direct access krta hai
+
+paheli line will be
+if(Session["username"==null]){  Response.Redirect("login.aspx");}
+else{
+procees...
+
+
+
+For Destroy a session - When user clicks on logout button
+Session.Abandon(); Method 
+Response.Redirect("login.aspx"); // redirect back to login again
+
+
+We can also pass session.Timeout() to destroy session for a period of time - 20 min or 10 min
+after that time session destroys automatically
+For this process, change the activity in Web.config() file
+<sessionState timeout="2"></sessionState> -  iske bad 2 min me logout ho jayega
+
+
+
+
+Application State Management - It is same to the session state
+But it makes only 1 file and all user information will store in that file only whereas session storeage will create multiple different different files
+based on the number of users.
+
+Use - ki  kitni bar is page ko open kra gaya hai
+use case me
+
+
+Yeh complete application ko kitne loggo ne access kra hai uski info bhi rakhta hai
+Application State her user ke liye 1 hi hoga
+
+
+example like = mere resume ko kitni bar open kra gaya
+
+
+Form Validation
+Check data before submitting in the sql server
+
+Client Side Validatir
+1 - Required Field validator
+2 - Range field validator
+3 - Compare validator - Entre your password and retype of your password
+4 - Regular Expressions to validate
+5 - Custom Validator - server side validator - khud ka message
+
+
+Methods - Control to validate - kisko check krna hai kisko validate krna hai\
+ager woh galat data enter krta hai to kya message bhejna hai
+
+
+
+
+
+
 
 
 
