@@ -277,14 +277,23 @@ Uses less memory compared to DataSet since it doesn't store data in memory.
 Typically used with the ExecuteReader method of a SqlCommand object.
 
 
-Difference between Web API and WCF?
+Difference between Web API and WCF?( WEb Api and rest api uses only http with xml/ JSON)
+SOAP: WCF primarily uses SOAP (Simple Object Access Protocol) for XML-based messaging.
+WCF provides communication between two or more nodes, WCF provides sending Binary format with TCP protocol.
+WCF provides xml, binary code data transfer
+WCF -asynchronous programming support
+
 WCF - Windows Communication Foundation - for creating rest services
 lot of configuration is needed to turn a WCF service into a REST Service. and specially it takes lot of configuration for soap then more in rest
 
 WCF is good for Message queue, duplex communication, end to end message security, one way messaging.
 It works on lt of protocol like TCP/IP/Http/Https
 WEB APi is already designed for rest services.
-
+REST services are state less, they dont depend on the neighbour states and request
+making them scalable as each request is independent and does not rely on previous requests. 
+This helps distribute the load and improve performance.
+Standardized Communication:
+Easy Communication and easy to configuration/use
 
 How many Filter used in Web API?
 Authentication Filter
@@ -544,7 +553,43 @@ REST is an architectural style for designing networked applications and is widel
 what would be possible return type of Web API method?
 1 - void
 2 - HTTP Response Method - Provides low-level control over the HTTP response message, allowing you to set headers, status codes, and content explicitly.
-3 - HTTP Action Result
+3 - HTTP Action Result - kya krana hai age 
+
+
+What is model binding ? MVC does automatically bind data from http get request to action method or models.
+ager mujhe http request se data ko action me bhejna ho tab me model binding ka use krunga
+
+Model binding allows developers to handle form submissions, query strings, route data, and other input data seamlessly and 
+makes it easier to work with complex data types in web applications.
+
+
+what is different contracts in WCF?
+
+Contracts are here to define the service of a WCF, structure of WCF
+
+When you start WCF you have to create interface
+
+Service Contracts - UI or interface which let you know what the services are provided
+A service contract defines the operations which are exposed by the service to the outside world.
+A service contract is the interface of the WCF service and it tells the outside world what the service can do. 
+It may have service-level settings, such as the name of the service and namespace for the service
+
+Operation Contract - its part of service contract, it works on return type with methods and works for logical handling and event handling
+An operation contract is defined within a service contract. 
+It defines the parameters and return type of an operation. 
+An operation contract can also defines operation-level settings, like as the transaction flow of the op-eration,
+the directions of the operation (one-way, two-way, or both ways), and fault contract of the operation.
+
+Data Contract
+A data contract defines the data type of the information that will be exchange be-tween the client and the service. 
+A data contract can be used by an operation contract as a parameter or return type, or it can be used by a message contract to define elements.
+
+
+Message Contract
+When an operation contract required to pass a message as a parameter or return value as a message, 
+the type of this message will be defined as message contract. 
+A message contract defines the elements of the message (like as Message Header, Message Body), as well as the message-related settings, such as the level of message security.
+
 
 
 
