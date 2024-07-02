@@ -232,7 +232,7 @@ After action method and before view
 
 
 what is connection pooling
-Connection to a databasse in expensuive
+Connection to a databasse is expensuive
 Connection pooling is a technique used to manage database connections efficiently in a high-performance application. 
 It involves maintaining a pool of active database connections that can be reused by different parts of the application,
 instead of creating and closing a new connection every time a database operation is performed. 
@@ -262,7 +262,7 @@ Can be serialized to XML for storage or transfer.
 
 
 DataSet - 
-It takes/fetch data from the data from the data source or database
+It takes/fetch data from the data from the data source or database to the dataset
 and
 DataAdapter - A DataAdapter acts as a bridge between a DataSet and a data source for retrieving and saving data. It uses commands to retrieve data from the database and populate the DataSet
 DataReader - 
@@ -286,14 +286,193 @@ It works on lt of protocol like TCP/IP/Http/Https
 WEB APi is already designed for rest services.
 
 
+How many Filter used in Web API?
+Authentication Filter
+Authorization Filter
+Action Filter
+Exception Filter
+Result Filter
+
+
+what are Immutable classes?
+An immutable class is a class whose objects cannot be modified after creation.
+using System;
+
+class Kushagra
+{
+    public int A { get; }
+
+    public Kushagra(int b)
+    {
+        A = b;
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        var k = new Kushagra(10);
+        // The following line will cause a compilation error because 'A' is read-only
+        // k.A = 11;
+        Console.WriteLine(k.A);
+    }
+}
+
+
+It must have only getter method and no setter method.
+
+what are extension method??
+
+ the extension method concept allows you to add new methods in the existing class or in the structure without modifying the source code of the original type 
+and you do not require any kind of special permission from the original type and 
+there is no need to re-compile the original type. It is introduced in C# 3.0.
+
+Ek pahele se bani class me kuch new methods aur varibales ko add krdo
+usko extend krdo bina usko chede new class bana ker
+
+iske liye new class should be static
+and use with this keyword
+
+
+using System;
+
+namespace ExtensionMethodExample
+{
+    // Static class to contain the extension method
+    public static class StringExtensions
+    {
+        // Extension method to count words in a string
+        public static int WordCount(this string str)
+        {
+            if (string.IsNullOrWhiteSpace(str))
+            {
+                return 0;
+            }
+
+            string[] words = str.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            return words.Length;
+        }
+    }
+
+    class Program
+    {
+        static void Main()
+        {
+            string text = "Hello, this is an example of extension methods.";
+            int wordCount = text.WordCount(); // Using the extension method
+            Console.WriteLine($"Word count: {wordCount}");
+        }
+    }
+}
+adding the word count method to any reference classes
 
 
 
+Characteristics of Static Classes
+No Instances: You cannot create an instance of a static class using the new keyword.
+Static Members: All members of a static class must be static (methods, properties, fields, events, etc.).
+Inheritance: Static classes cannot be inherited or used as a base class.
+Sealed by Default: A static class is implicitly sealed, meaning it cannot be derived from.
+
+
+what are virtual and abstract method in c sharp
+using System;
+
+public abstract class AbstractBaseClass
+{
+    // Abstract method with no implementation
+    public abstract void Display();
+}
+
+public class ConcreteDerivedClass : AbstractBaseClass
+{
+    // Providing implementation for the abstract method
+    public override void Display()
+    {
+        Console.WriteLine("Display method in ConcreteDerivedClass");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        // AbstractBaseClass abstractObj = new AbstractBaseClass(); // This line would cause a compilation error
+        ConcreteDerivedClass concreteObj = new ConcreteDerivedClass();
+        concreteObj.Display(); // Output: Display method in ConcreteDerivedClass
+
+        AbstractBaseClass polymorphicObj = new ConcreteDerivedClass();
+        polymorphicObj.Display(); // Output: Display method in ConcreteDerivedClass
+    }
+}
+
+
+what are the difference ways you can improve Asp.net Page improvement?
+A) Minimize server side processing
+Reduce Complexity: Simplify your code to reduce processing time. Avoid complex logic in page events and use business logic in separate classes or services.
+Efficient Data Access: Use efficient data access patterns, such as parameterized queries or stored procedures, and minimize database round-trips.
+Caching: Utilize caching (e.g., output caching, data caching) to reduce server load and improve page response times.
+
+B)Avoid ViewState Where Possible
+Disable ViewState: ViewState increases page size and can slow down page performance. Disable it for controls that don’t require it.
+
+C) Asynchronous Programming
+Async/Await: Use asynchronous programming to improve responsiveness and avoid blocking operations.
+
+Minify CSS and JavaScript: Reduce file size by minifying CSS and JavaScript files.
+
+Optimize Images
+Image Compression: Use appropriately sized and compressed images to reduce load times.
+Lazy Loading: Implement lazy loading for images to load them only when they come into the viewport.
+
+Database latency is the delay between a query and a response from the database server
+Reduce database latency
+
+Improve Page Load Times
+Error handling and logging
+
+Postback refers to the process of submitting a form on an ASP.NET Web Forms page back to the server for processing.
+When a user interacts with a page (e.g., by clicking a button), the page is submitted to the server, 
+and the server processes the request and sends the updated page back to the client.
+
+
+Caching - 
+Output Caching
+Output Caching stores the generated HTML of a page or control, which can be served directly to the user for subsequent requests,
+avoiding the need for re-rendering or re-processing. This is particularly useful for pages with static or infrequently changing content.
+
+
+Data Caching
+Data Caching involves storing data objects in memory, which can be retrieved quickly when needed. T
+This can be used to cache data that is computationally expensive to retrieve or generate, such as database query results.
+
+Application Caching
+Application Caching stores global data that is shared across all users and requests.
+This type of caching can be used for storing configuration settings, frequently used data, or application-wide resources.
 
 
 
+Cache Dependencies
+Cache Dependencies allow you to automatically invalidate or remove cached items when certain conditions are met, such as changes to a file or database.\
 
 
+
+what is sliding expiration and absolute expiration?
+ sliding expiration and absolute expiration are two caching mechanisms that determine how long a cached item remains in the cache 
+before it is invalidated and removed. These expiration policies help control cache lifecycle and ensure that stale data is not served to users.
+
+Absolute Expiration
+Absolute expiration sets a fixed time at which the cache entry will expire and be removed from the cache, 
+regardless of whether it has been accessed during that time. This is useful when you know exactly how long an item should be cached.
+
+
+Sliding expiration resets the expiration timer each time the cached item is accessed. 
+The item will remain in the cache as long as it is accessed within the specified time period.
+If the item is not accessed within this period, it will be removed from the cache.
+
+
+Enabling ViewState: Ensure ViewState is enabled to maintain control state.
 
 
 
