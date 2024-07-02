@@ -475,6 +475,88 @@ If the item is not accessed within this period, it will be removed from the cach
 Enabling ViewState: Ensure ViewState is enabled to maintain control state.
 
 
+what are difference types of Selector in Jquery?
+ Basic Selectors - $("p") // Selects all <p> elements
+$("#myId") // $(".myClass") // Selects all elements with class="myClass"
+$("input[name='email']") // Selects all <input> elements with name="email"
+$("input[name$='name']") // Selects all <input> elements with name ending with "name"
+$("div p") // Selects all <p> elements inside <div> elements
+$(":checked") // Selects all checked checkbox and radio elements
+$("p:first-child") // Selects all <p> elements that are the first child of their parent
+
+
+Difference between document.ready() and window.load(); in jquery
+Document.ready() will work when 
+method is used to execute code when the DOM (Document Object Model) is fully loaded and ready to be manipulated.
+This means that the HTML has been loaded and parsed, but images, scripts, and other resources may still be loading.
+
+Usage: It's typically used to set up event handlers, initialize plugins, or perform other setup tasks that depend on the presence of HTML elements.
+
+
+
+$(window).load() method or the window.onload event is used to execute code when the entire page is fully loaded, 
+including all images, scripts, and other resources. This occurs after the DOM is ready and all resources have been completely downloaded.
+It's typically used to perform tasks that depend on the complete loading of all resources, such as actions related to image sizes or external scripts.
+
+
+$(document).ready(): Runs earlier in the page loading process, allowing faster interaction with the page. - mainly for dom interaction - html skeleton
+$(window).load() or window.onload: Runs later, potentially causing a delay if tasks that can be performed earlier are deferred to this point. - for event handling
+
+
+JQuery Chaining
+chaining is a technique that allows you to perform multiple actions on the same set of elements, 
+one after another, using a single line of code.
+This is possible because most jQuery methods return the jQuery object itself, allowing you to chain additional methods directly.
+
+$('#myElement')
+  .css('color', 'blue')    // Change the text color to blue
+  .slideUp(300)            // Slide up the element over 300 milliseconds
+  .slideDown(300);         // Slide down the element over 300 milliseconds
+
+
+
+what is prevent dot and prevent deflaut?
+, preventDefault() and stopPropagation() are methods used to control event handling in the browser
+
+stopping a form from submitting when a submit button is clicked or preventing a link from navigating to its href.
+$('form').submit(function(event) {
+  event.preventDefault(); // Prevents the form from being submitted
+  alert('Form submission prevented!');
+});
+
+
+
+its due to validation and checks and complete of required fields
+The event.stopPropagation() stops the click event from bubbling to the parent elements.  
+matlab ager mere uper koi parent element hai aya grand prent element hai toh me unki baat nhi sununga sirf apna krunga
+
+apne se uper wale me properties lagi hai alert buttons lage hai
+jisse ager mujhe koi click krega toh woh bhi click honge 
+lekin stopPropagation se parents wale elements remove ho jayenge aur mere per joh events lage hai
+wahi work krenge
+as simple as it
+
+what are Restful services/ why will used it?
+RESTful services (Representational State Transfer) are a type of web service that follows the principles of REST architecture.
+REST is an architectural style for designing networked applications and is widely used in web development to create scalable and stateless services.
+
+
+what would be possible return type of Web API method?
+1 - void
+2 - HTTP Response Method - Provides low-level control over the HTTP response message, allowing you to set headers, status codes, and content explicitly.
+3 - HTTP Action Result
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
