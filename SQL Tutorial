@@ -1,0 +1,56 @@
+Undeerstanding the basics of SQL
+
+- Handling the Customers Table
+
+UPDATE, DELETE, INSERT are most important.
+
+
+1 - INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');<- Inserting In the table
+2 - DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
+3 - UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
+
+
+BETWEEN / IN / LIKE / Top
+
+
+
+1 - SELECT *,CustomerName as KushagraGupta, CustomerID as HIII from Customers; <- Change data suitably
+2 - SELECT * FROM Customers WHERE City IN (SELECT DISTINCT City FROM Customers); <- SubQuery Understanding
+3 - SELECT Count(*) From (SELECT DISTINCT City From Customers);
+4 - SELECT * From Customers WHERE NOT City ="Berlin";
+5 - SELECT * From Customers WHERE NOT City ="Berlin" ORDER BY City;
+6- SELECT * FROM Customers ORDER BY Country ASC, CustomerName DESC;
+7 - SELECT * From Customers where country="spain" AND NOT CustomerID=8;
+8 - SELECT * FROM Customers WHERE Country = 'Spain' AND CustomerName LIKE 'G%' OR CustomerName LIKE 'R%';
+And have higher preference the OR so first and query will completely execute.
+they divided like country spain with customer name start with G
+and customername start with R, no matter with country
+
+SELECT * FROM Customers
+WHERE (Country = 'Spain' AND CustomerName LIKE 'G%') OR CustomerName LIKE 'R%';
+
+
+9 - SELECT * FROM Customers WHERE NOT CustomerName LIKE 'A%';
+10 - Between or In SELECT * FROM Customers WHERE CustomerID NOT BETWEEN 10 AND 60; 
+11 - SELECT * FROM Customers WHERE City IN ('Paris', 'London');
+12 - SELECT * from Customers WHERE CustomerID Between 10 AND 30;
+13 - SELECT * From Customers WHERE Country IN ("Canada", "UK", "Mexico");
+14 - SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;
+15 - SELECT TOP 3 * FROM Customers; <- TOP Integer
+16 - SELECT * FROM Customers LIMIT 3;
+17 - 
+
+
+
+
+
+DELETE
+Purpose: Removes rows from a table based on a specified condition.
+DROP
+Purpose: Removes an entire database object, such as a table, view, or database. / Complete table or Database delete with their schema
+TRUNCATE
+Purpose: Removes all rows from a table, but preserves the table structure for future use.
+
+
+
+
