@@ -2,13 +2,13 @@ Undeerstanding the basics of SQL
 
 - Handling the Customers Table
 
-UPDATE, DELETE, INSERT are most important.
+UPDATE, DELETE, INSERT are most important. 
 
 
 1 - INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country) VALUES ('Cardinal', 'Tom B. Erichsen', 'Skagen 21', 'Stavanger', '4006', 'Norway');<- Inserting In the table
 2 - DELETE FROM Customers WHERE CustomerName='Alfreds Futterkiste';
 3 - UPDATE Customers SET ContactName = 'Alfred Schmidt', City= 'Frankfurt' WHERE CustomerID = 1;
-
+4 - ALTER TABLE Kushagra ADD Email varchar(255); <-- statement is used to add, delete, or modify columns in an existing table.
 
 BETWEEN / IN / LIKE / Top
 
@@ -38,7 +38,32 @@ WHERE (Country = 'Spain' AND CustomerName LIKE 'G%') OR CustomerName LIKE 'R%';
 14 - SELECT CustomerName, ContactName, Address FROM Customers WHERE Address IS NULL;
 15 - SELECT TOP 3 * FROM Customers; <- TOP Integer
 16 - SELECT * FROM Customers LIMIT 3;
-17 - 
+17 - SELECT * FROM Customers WHERE city LIKE 'L_nd__'; < --- for single character use _
+18 - SELECT * FROM Customers WHERE city LIKE '%L%'; <----- The % wildcard represents any number of characters, even zero characters.
+19 - SELECT * FROM Customers WHERE CustomerName LIKE 'a__%'; <-- Combination of both _ and %
+20 - SELECT * FROM Customers WHERE CustomerName LIKE '[bsp]%'; <----- Return all customers starting with either "b", "s", or "p":
+21 - SELECT * FROM Customers WHERE CustomerName LIKE '[a-f]%'; <---- For range between  a to f , Will take valye form a to f
+22 - SELECT * FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders);<-- Works on list 
+IN - String ke liye Between Integer ke liye
+
+23 - SELECT * FROM ProductsWHERE Price BETWEEN 10 AND 20 AND CategoryID IN (1,2,3);
+24 - SELECT Country FROM Customers UNION SELECT Country FROM Suppliers;
+The UNION operator is used to combine the result-set of two or more SELECT statements.
+Every SELECT statement within UNION must have the same number of columns or you should select common attribute name so that match
+The columns must also have similar data types
+The columns in every SELECT statement must also be in the same order
+
+
+
+25 - SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country;
+ it attempts to select columns that are not aggregated or included in the GROUP BY clause.
+When using the GROUP BY clause, all columns in the SELECT statement must either be included in the GROUP BY clause 
+or be used in an aggregate function (like COUNT, SUM, AVG, etc.).
+
+26 - SELECT COUNT(CustomerID), Country FROM Customers GROUP BY Country HAVING COUNT(CustomerID) > 5;
+WHere replace having in groupby commands
+
+27 - 
 
 
 
@@ -51,6 +76,73 @@ Purpose: Removes an entire database object, such as a table, view, or database. 
 TRUNCATE
 Purpose: Removes all rows from a table, but preserves the table structure for future use.
 
+SQL Joins <- Returns records that have matching values in both tables.
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+
+INNER JOIN - SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+Orders table ke CustomerID column me aur Customers table ke CustomerID column me joh values common hongi un records/ rows ko consider kra jayega.
+ager Orders table ke CustomerID column me ek value hai 2, aur woh Customers ke Column me present nhi hai toh usko ignore kr diya jayeag, uske data ko 
+uske related sari cheej ko also vice- versa for customers table.
+
+
+LEFT Join - Left all records with no matter null values jaye ya na jaye
+SELECT * FROM Products LEFT JOIN Categories ON Products.CategoryID = Categories.CategoryID;
+
+Left ka sara data ayega, aur joh match kr raha hai right table se kavel wahi wahi column ayenge
+
+aur ager kuch blank reh jata hai toh null ayega
+
+https://www.youtube.com/watch?v=H6988OpZKTU
+
+
+Right Join - Same as with right join
+Right table + common values of left and right table
+
+
+
+Full Join - Full Outer Join 
+Returns all rows of table A and table B with their corresponding values
++
+lot of null values if there is no match
+
+Isme conditions on wali hi important hai
+
+
+Most imporatant joh ham condition lagate hai 
+uske reference me ham check krte hai ki weather it exist or not
+
+
+Joh column common hai usi ke basis per check kro 
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SQL Database - Understanding The DB
+1 - Create Database Db;
+2 - Drop Database Db;
+3 - CREATE TABLE Persons ( PersonID int, LastName varchar(255), FirstName varchar(255), Address varchar(255), City varchar(255));
+4 - Drop Table Kushagra;
+5 - 
 
 
 
