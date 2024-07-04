@@ -117,6 +117,17 @@ uske reference me ham check krte hai ki weather it exist or not
 Joh column common hai usi ke basis per check kro 
 
 
+SELF Join - A Join on table itself again
+same table per join kro
+SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;
+https://www.youtube.com/watch?v=V3xjmBi1QQE
+
+Union - Not Duplicates
+Union all - allowes duplicates
+
+Its like Set in class 11
+
+
         
 
 
