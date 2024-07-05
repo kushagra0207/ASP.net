@@ -1,0 +1,37 @@
+MS SQL SERVER is same as SQL Server
+
+SQL Server <-- It is a software, developed by Microsoft, which is implemented from the specification of RDBMS.
+Use of SQL <---- To generate reports through SQL Server Reporting Services (SSRS).
+
+For restoring back database - Restore database Testdb from disk = 'D:\Backup\Testdb_full_backup.bak'
+
+Instance of SQL Server
+An instance is an installation of SQL Server.
+An instance is an exact copy of the same software.
+If we install 'n' times, then 'n' instances will be created.
+
+Creation of Instances is due to, 
+For utilization of ram and time resources and many more...
+for specific resources alsp
+reduce cost
+To maintain production, development, and test environments separately.
+
+
+SQL Server Management Studio (SSMS) is a tool that helps you manage and interact with Microsoft SQL Server, a type of database.
+Think of it like a control panel for your database. Here's a simple way to understand it:
+
+ek control panel se ham
+security
+authentication
+wuery execution 
+sab kuch kr sakte hai just like command prompt in windows
+
+
+1 - Create Database db;
+2 - Drop Database db;
+3 - Restore Database db from disk ....;
+4 - use db;
+5 - Backup database <Your database name> to disk = '<Backup file location + file name>';
+6 - Backup database TestDB to disk = 'D:\TestDB_Full.bak'
+7 - Restore database <Your database name> from disk = '<Backup file location + file name>'
+
