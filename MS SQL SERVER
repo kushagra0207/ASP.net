@@ -34,4 +34,7 @@ sab kuch kr sakte hai just like command prompt in windows
 5 - Backup database <Your database name> to disk = '<Backup file location + file name>';
 6 - Backup database TestDB to disk = 'D:\TestDB_Full.bak'
 7 - Restore database <Your database name> from disk = '<Backup file location + file name>'
+8 - Create user <username> for login <loginname> <-- allowing user to access database and can login successful
+9 - Use <database name> Grant <permission name> on <object name> to <username\principle>
+10 - 
 
