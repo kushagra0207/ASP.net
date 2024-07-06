@@ -1,5 +1,13 @@
 MS SQL SERVER is same as SQL Server
 
+CREATE TABLE Orders (
+    OrderID int NOT NULL,
+    OrderNumber int NOT NULL,
+    PersonID int,
+    PRIMARY KEY (OrderID),
+    FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+);
+
 SQL Server <-- It is a software, developed by Microsoft, which is implemented from the specification of RDBMS.
 Use of SQL <---- To generate reports through SQL Server Reporting Services (SSRS).
 
