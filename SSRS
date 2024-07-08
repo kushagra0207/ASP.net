@@ -3,3 +3,58 @@ SSRS - SQL Server Reporting Services
 SQL Server Reporting Services (SSRS) is a reporting tool provided by Microsoft 
 which is used to produce formatted reports such as graphs, tables of data, and charts.
 
+SSRS stands for SQL Server Reporting Services.
+It is a reporting tool developed by Microsoft that comes free with the SQL Server.
+It produces formatted reports with the tables of data, graph, and reports.
+Reports are hosted on a server and can be configured to run using parameters supplied by users.
+When we run the reports, the current data appears from the database, XML file or other data source. 
+It provides the security features that controls who can see which reports.
+
+
+Data visualization is the virtual access to the data that we have.
+A well-designed data can be a graph, charts or a report, and visual representation of the data is the simplest and most powerful representation of any data. 
+For example, I am a Business Analyst, so I am used in working with the numbers since I have started,
+but if I want to show the information with respect to the business to the owner, 
+then I need to provide the visual representation of a data which is easier to understand.
+
+
+SSRS have features like
+1 - Standard Microsoft Development Environment.
+2 - Mobile support.
+3 - Advanced Analytics
+4 - No cost
+
+Microsoft analytic services, server integration services, reporting services e.t.c
+
+You can link any of these data sources to the Microsoft SQL Server. 
+Once you attached the data sources to the SQL Server, then data retrieval and rendering process happen.
+Rendering is the process of filtering and analyzing the data to meet the requirements. 
+Report processing: Report processing comes after Rendering.
+Report processing is the process of publishing, filtering, and modifying the existing reports. 
+XML web service interface: When you publish the report then the report is published to the website,
+it is possible through the XML web service interface. Security and Scheduling and delivery come with the SQL Server.
+
+Lifecycle of SSRS
+Authon - report banayega
+management - report ki managemnet hogi and achee se uska dhyan rakha jayega
+Delivery - us report ko kab submite krna hai kese krna hai 
+
+all these
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
