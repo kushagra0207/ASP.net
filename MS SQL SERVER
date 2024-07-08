@@ -120,6 +120,45 @@ MERGE - It combines the sequence of conditional insert, update and delete statem
 
 
 
+Noncluctered index it is like notebook index
+
+
+View -
+View is a virtual table
+It is a saved query, acts as a filter on the table and reference in the view query.
+like koi data bar bar chahiye hota tab ham uska use krte hai
+
+like clipboard jaha ham data store kr lete hai aur bad me use krte hai
+It not acquires any type of physical storage in the database.
+
+aims - to maintain the security at row and columne level.
+
+
+Create View view_name as [Simple Select Query] | [Join Query];
+e.g create View view_name as SELECT empName, empsal, loc From employee;
+
+
+View - in simple terms
+
+ager mere pass ek query hai joh mujhe bar bar type krni pad rahi hai
+kyo na me usko ek view me rakhdu taki abh me direct view ko call krke
+same result display kradu
+
+
+view - ek repeating query ko ek view me dalna aur usko show krna
+
+Create View view_name AS select,name, salary from employee; // command completed successfully
+
+-- It will be visible in the view folder.
+
+SELECT * from view_name; // call the view_name view and execute its related query // thats why it is called as saved query
+
+
+
+
+
+
+
 
 
 
