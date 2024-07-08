@@ -118,6 +118,17 @@ MS SQL -
 
 MERGE - It combines the sequence of conditional insert, update and delete statements in the single table.
 
+column_name security will be when we dont want to display the salary of our employees, so we are providing column lebel security.
+
+For row_level security consider below query as an example to understand this
+
+- we want to not disply the clients or employees outside from our India
+we are providing security at row level
+
+Create View V_Employee_India as Select * from employee where location="India";
+
+Select * from V_Employee_India;
+
 
 
 
