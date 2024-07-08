@@ -41,6 +41,17 @@ Delivery - us report ko kab submite krna hai kese krna hai
 
 all these
 
+Steps -
+
+1 - Connect data warehouse / data source
+2 - create report wizard
+3 - Now add your data from data warehouse to report wizard.
+4 - insert chart and pie charts graphs directly by right clicking and selecting the value.
+5 - after that you can display the same data through using xml to websites and web apps.
+
+and see the imageination of it
+
+
 
 
 
