@@ -165,6 +165,18 @@ Create View view_name AS select,name, salary from employee; // command completed
 SELECT * from view_name; // call the view_name view and execute its related query // thats why it is called as saved query
 
 
+Common table Expression - CTE
+
+Temporary results and available for perticular period of time.
+
+WITH cte_name As (Cte_query) followed query
+Use always with DMl
+
+
+WITH cte_name As (Column1, Column2, Columne3 ) followed query
+
+
+
 
 
 
