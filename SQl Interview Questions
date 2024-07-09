@@ -1,0 +1,23 @@
+SQl Interview Questions
+
+
+Diff between in function & SP - 
+Stored Procedure SP 
+A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+
+CREATE PROCEDURE procedure_name
+AS
+sql_statement
+GO;
+Execute a Stored Procedure -- EXEC procedure_name;
+
+
+CREATE PROCEDURE SelectAllCustomers @City nvarchar(30) AS SELECT * FROM Customers WHERE City = @City GO;
+Execute the stored procedure above as follows: Example  - EXEC SelectAllCustomers @City = 'London';
+
+
+While(Condition)
+Begin
+...
+End  - While loop for SQL
+
