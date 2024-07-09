@@ -34,7 +34,7 @@ Report processing is the process of publishing, filtering, and modifying the exi
 XML web service interface: When you publish the report then the report is published to the website,
 it is possible through the XML web service interface. Security and Scheduling and delivery come with the SQL Server.
 
-Lifecycle of SSRS
+Lifecycle of SSRS - reporting 
 Authon - report banayega
 management - report ki managemnet hogi and achee se uska dhyan rakha jayega
 Delivery - us report ko kab submite krna hai kese krna hai 
@@ -50,6 +50,21 @@ Steps -
 5 - after that you can display the same data through using xml to websites and web apps.
 
 and see the imageination of it
+
+
+Here, are prime reasons for using SSRS tool:
+
+SSRS is an enhanced tool compared to Crystal Reports
+Faster processing of reports on both relational and multidimensional data
+Allows better and more accurate Decision-making mechanism for the users
+Allows users to interact with information without involving IT professionals
+It provides a World Wide Web-based connection for deploying reports. Hence, reports can be accessed over the internet
+SSRS allows reports to be exported in different formats. You can deliver SSRS reports using emails
+SSRS provides a host of security features, which helps you to control, who can access which report.
+
+
+
+
 
 
 
