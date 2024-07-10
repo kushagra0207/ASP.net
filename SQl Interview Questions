@@ -4,6 +4,7 @@ SQl Interview Questions
 1 - Diff between in function & SP - 
 Stored Procedure SP 
 A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
+A stored procedure is a set of SQL statements that can perform a variety of tasks, such as data manipulation, transaction management, and control-of-flow statements.
 
 
 Declare @name int;
@@ -111,6 +112,77 @@ Create View view_name AS select,name, salary from employee; // command completed
 -- It will be visible in the view folder.
 
 SELECT * from view_name; // call the view_name view and execute its related query // thats why it is called as saved query
+
+
+Difference between View and Sp
+
+1 - View never use a parameter while Sp uses
+2 - View can contain single select query while Sp can contains group of queries.
+3 - View can not perform modification to any table while Sp can perform modification.
+4 - View is used for display of results while SP used for performing operations and busineess logic.
+5 - View Provides row and columen level secuirty while SP Provides Encapsulation and error handling.
+6 - 
+
+
+CTE  - Common Table Expression - used for optimization
+
+CTE - Temporary table hai jiske ander ek query ka data store hpga
+uske bad usko call krker ham data ko nikal lenge
+
+Jab bhi ham koi result table banate hai usko store krne ke liye ek space hota hai usko CTE bolte hai.
+Its just like temporary Table where we can store our result table
+and when we want to see some things we can seletc column name according to demands.
+
+
+A Common Table Expression (CTE) in SQL is a temporary result set
+that you can reference within a SELECT, INSERT, UPDATE, or DELETE statement. 
+CTEs are defined using the WITH keyword 
+and can improve the readability and structure of your SQL queries, 
+especially when dealing with complex queries or recursive data.
+
+
+Key Features of CTEs:
+Temporary Scope: CTEs exist only for the duration of the execution of the query in which they are defined.
+Improves Readability: By breaking down complex queries into simpler, more understandable parts.
+Recursion Support: CTEs can be recursive, which allows for querying hierarchical or tree-structured data.
+Reusability: You can reference the CTE multiple times within the same query.
+Syntax:
+The basic syntax for a CTE is:
+
+WITH cte_name (column1, column2, ...) AS (
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE conditio
+)
+
+SELECT * FROM cte_name; <---------------- Calling my CTE
+// same name cte_name using 2 places ham is select query ka operation ek temporaru table me store kr rahe hai
+
+
+Benefits:
+Readability: Makes complex queries more manageable and easier to understand.
+Maintainability: Simplifies modifications to the query structure.
+Modularity: Breaks down queries into modular components.
+CTEs are a powerful feature in SQL for structuring and simplifying complex queries.
+
+
+Most Imporatnt - We can add unlimited query and unlimited table in my CTE
+CTE is a collection of user defined table.
+
+
+1 - View is a virtual table where as CTE Will take temporray memory. CTE memory Leta hai
+2 - View does not support recursion while CTE Support Recursion.
+3 - View can we provide security over row and column fields. 
+4 - CTE does not support indexing while View Supports Indexing.
+
+
+
+
+
+
+
+
+
 
 
 
