@@ -1,23 +1,119 @@
 SQl Interview Questions
 
 
-Diff between in function & SP - 
+1 - Diff between in function & SP - 
 Stored Procedure SP 
 A stored procedure is a prepared SQL code that you can save, so the code can be reused over and over again.
 
+
+Declare @name int;
+Set @name = 10;
+
+
 CREATE PROCEDURE procedure_name
 AS
+begin
 sql_statement
-GO;
+end;
 Execute a Stored Procedure -- EXEC procedure_name;
+
+<----------------------------------- Parameterized Procedure ------------------>
+CREATE PROCEDURE procedure_name(@name int, @value Varchar(255))
+AS
+begin
+sql_statement
+end;
+Execute a Stored Procedure -- EXEC procedure_name;
+
+ EXEC SelectAllCustomers 10,12;
+Same way e.g.  EXEC SelectAllCustomers 'London',2;
+
+
 
 
 CREATE PROCEDURE SelectAllCustomers @City nvarchar(30) AS SELECT * FROM Customers WHERE City = @City GO;
 Execute the stored procedure above as follows: Example  - EXEC SelectAllCustomers @City = 'London';
 
 
+
+
 While(Condition)
 Begin
 ...
 End  - While loop for SQL
+
+Functions in SQL
+CREATE FUNCTION add_numbers (a INT, b INT)
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    RETURN a + b;
+END;
+
+
+SELECT add_numbers(5, 10) AS result; <-- Execution part
+
+Difference between Sp and functions
+1 - Sp are precompiled object, it compiled only for 1 time and saves its compiled format and whenever it calls they exexute compiled formate.
+2 - A function is compiled and executed everytime whenever it is called.
+
+1 - We can use try catch mechanism inside sp
+Begin try
+..
+End Try
+Begin Catch
+..
+end Catch
+2 - Cannot used inside the functions.
+
+
+1 - We can use commit, rollback, begin transactions in sp(transaction and procedures)
+2 - We cant use it inside the functions.
+
+
+1 - return value is optional in Sp
+2 - returen values is must in functions
+
+1 - Functions can be called from procedures
+2 - Procedures are not allowes to call by functions.
+
+1 -Procedures allow select as well as DML statements(Insert / Updater / Deleete)
+2 - Functions allow only select statement
+
+
+
+View -
+View is a virtual table
+It is a saved query, acts as a filter on the table and reference in the view query.
+like koi data bar bar chahiye hota tab ham uska use krte hai
+
+like clipboard jaha ham data store kr lete hai aur bad me use krte hai
+It not acquires any type of physical storage in the database.
+
+aims - to maintain the security at row and columne level.
+
+
+Create View view_name as [Simple Select Query] | [Join Query];
+e.g create View view_name as SELECT empName, empsal, loc From employee;
+
+
+View - in simple terms
+
+ager mere pass ek query hai joh mujhe bar bar type krni pad rahi hai
+kyo na me usko ek view me rakhdu taki abh me direct view ko call krke
+same result display kradu
+
+
+view - ek repeating query ko ek view me dalna aur usko show krna
+
+Create View view_name AS select,name, salary from employee; // command completed successfully
+
+-- It will be visible in the view folder.
+
+SELECT * from view_name; // call the view_name view and execute its related query // thats why it is called as saved query
+
+
+
+
+
 
