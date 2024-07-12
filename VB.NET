@@ -11,7 +11,8 @@ Dim Variable_Name as DataType  = 10;
  Dim b As Byte = 1  
  Dim num As Integer = 5  
 
-Lvalue: It is an lvalue expression that refers to a memory location for storing the address of a variable. An lvalue is a variable that can appear to the left or right of the assignment operator to hold values
+Lvalue: It is an lvalue expression that refers to a memory location for storing the address of a variable. 
+An lvalue is a variable that can appear to the left or right of the assignment operator to hold values
 
 Rvalue: It is an rvalue expression that is used to store a value in some address of memory. An rvalue can appear only on 
 the right- hand side because it is a value of the variable that defines on the right-hand side.
