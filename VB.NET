@@ -125,6 +125,13 @@ dim arr() as Integer = {1,2,3,1,2};
 Will be best way to make the array
 
 
+1 - If Then and End If
+2 - While and End While
+3 - For i as Integer = 1 to 11 Step = 1
+
+Next
+
+
 
 
 
