@@ -11,3 +11,40 @@ Asp.net - Active Server Pages
 Console.ReadLine() for reading the input
 - The Console.ReadLine() method returns a string. Therefore, you cannot get information from another data type, such as int.
 - int age = Convert.ToInt32(Console.ReadLine());
+
+
+We use base in case of C# and use super in case of java.
+
+using System;
+
+public class BaseClass
+{
+    public BaseClass(int number)
+    {
+        Console.WriteLine($"BaseClass constructor called with number: {number}");
+    }
+}
+
+public class DerivedClass : BaseClass
+{
+    public DerivedClass(int number, string text) : base(number)
+    {
+        Console.WriteLine($"DerivedClass constructor called with text: {text}");
+    }
+}
+
+public class Program
+{
+    public static void Main()
+    {
+        DerivedClass derived = new DerivedClass(42, "Hello, World!");
+    }
+}
+
+
+Invoking and passing value through method with base class example
+- base is same as super in C#.
+
+
+
+
