@@ -3,3 +3,69 @@ jQuery is a lightweight, "write less, do more", JavaScript library.
 
 https://www.w3schools.com/jquery/jquery_events.asp
 
+
+
+Basic syntax is: $(selector).action()
+
+A $ sign to define/access jQuery
+A (selector) to "query (or find)" HTML elements
+A jQuery action() to be performed on the element(s)
+Examples:
+
+$(this).hide() - hides the current element.
+
+$("p").hide() - hides all <p> elements.
+
+$(".test").hide() - hides all elements with class="test".
+
+$("#test").hide() - hides the element with id="test".
+
+
+Syntax for Jquery - Events
+$("p").click(function(){
+  // action goes here!!
+});
+
+
+Actions like this - $("#hide").click(function(){
+  $("p").hide(); //actions
+});
+
+$("#show").click(function(){
+  $("p").show();
+});
+
+
+
+
+Jquery Chaining - 
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#p1").css("color", "red").slideUp(2000).slideDown(2000); // Chaining in Jquery Takes place like that
+  });
+});
+
+
+
+// $("button").click(function(){
+  $("#div1").addClass("important blue");
+}); 
+
+// adding css classes in Jquery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
