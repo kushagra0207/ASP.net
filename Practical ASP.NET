@@ -344,6 +344,11 @@ iske liye new class should be static
 and use with this keyword
 
 
+Static class - All fields, variables, classes are Static
+ No instance will be created 
+ Not inherited at all
+ Direct Access to their static method.
+
 using System;
 
 namespace ExtensionMethodExample
@@ -447,12 +452,12 @@ and the server processes the request and sends the updated page back to the clie
 
 
 Caching - 
-Output Caching
+Output Caching - direct html page render
 Output Caching stores the generated HTML of a page or control, which can be served directly to the user for subsequent requests,
 avoiding the need for re-rendering or re-processing. This is particularly useful for pages with static or infrequently changing content.
 
 
-Data Caching
+Data Caching - storing data objects in memory
 Data Caching involves storing data objects in memory, which can be retrieved quickly when needed. T
 This can be used to cache data that is computationally expensive to retrieve or generate, such as database query results.
 
