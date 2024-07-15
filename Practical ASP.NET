@@ -563,9 +563,33 @@ what would be possible return type of Web API method?
 
 What is model binding ? MVC does automatically bind data from http get request to action method or models.
 ager mujhe http request se data ko action me bhejna ho tab me model binding ka use krunga
-
+ 
 Model binding allows developers to handle form submissions, query strings, route data, and other input data seamlessly and 
 makes it easier to work with complex data types in web applications.
+
+
+Model - Model class
+Binding - Map krna or connect  krna
+maps data fron Http request to action method parameters.
+
+
+Student/Edit/2 ---> Will be stored in public IACtion Edit(int d){
+                                         return View();
+                                       }
+
+Http request - Student/Edit/2 
+matlab request se data bhejna action me usi ko model binding krte hai
+
+Http request data example - 2  Student/Edit/2?name=Kushagra&id=7
+
+Also, we can map our http request data to action then to models
+
+
+Understanding Model
+example ek class hai employee name se mene uske ander kafi sare parameters aur attributes bana rakhe hai
+toh data http request se action se hote hue seedha model ke object me store hoga yani class ke object me.
+
+Fir aap object.name krke proprties and value ko access kr sakte ho
 
 
 what is different contracts in WCF?
