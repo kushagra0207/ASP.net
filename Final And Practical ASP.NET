@@ -27,6 +27,43 @@ IsPostBack  - iska matlab kya page 2 bar load hua hai then true
 otherwise false
 
 
+Application - state is same as Session state and they both have their same syntax of declaration and use - Application{"user"] = Textbox2.value;
+
+Session["user"] = TextBox1.value;
+Application{"user"] = Textbox2.value;
+
+In case of Session - ek browser per ager me login krta hu wahi mera session create hoga fir me dusre browser per onen krunga toh mujhe wapas se id password dena padega.
+
+In case of Application - ager me ek bar login ho gaya toh me kisi bhi browser per jau mujhe direct access mileag apne dashboard ka no need to login again
+
+Application State ka matlab joh bhi koi different different location se aa raha ho
+usko data same milega
+state same milegi
+without login 
+
+
+Is application ko different different log accees kr sakte hai
+
+
+
+Connect SQL with Configuration
+using System.Configuration;
+using System.Data.SqlClient;
+
+ConnectionString - connect Sql Connection link to the sql
+
+
+
+Example of Cookie is like - Remember Me
+2 - My favourites items
+3-  shoping cart
+
+HttpCookie cookie = new HttpCookie("user");
+cookie["username'] = Textbox1.text;
+
+
+
+
 
 
 
