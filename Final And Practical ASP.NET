@@ -1,0 +1,44 @@
+Final And Practical ASP.NET
+
+Understanding ASP.NET complete and practical way
+
+ASP.Net Provides
+1 - Web Forms
+2 - ASP.Net MVC
+3 - ASP.NET Web pages
+
+
+
+runat="Server" <-- Form submit at IIS
+
+razor syntax used to display dynamically data inside html/css files.
+
+Master Page - Footer/ Header / Navigation / Use code again and again
+
+Create and use Css in ASP.Net
+StyleSheet - file 
+Style.css
+
+PostBack - ek request hoti hai
+It means sending all information from client to web server and get back to client
+2 time reload hota hai
+
+IsPostBack  - iska matlab kya page 2 bar load hua hai then true
+otherwise false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
