@@ -57,3 +57,176 @@ Controller Action	Typically associated with a specific        action	Can be call
 Model Binding	Can be strongly typed	                     Can be strongly typed
 Example	Full HTML page with <!DOCTYPE html>	           HTML snippet without <!DOCTYPE html>
 
+
+
+can we define method Abstract and sealed class at both same time?
+No, you cannot define an abstract method in a sealed class in C#. This is because the purposes of abstract and sealed keywords are fundamentally opposed.
+You cannot define a class as both abstract and sealed at the same time in C#. Abstract classes are meant to be inherited,
+while sealed classes are meant to prevent inheritance. 
+
+
+
+
+what are delegate methods and its type?
+43, 44, 45, 46, 48, 57
+
+
+
+if you have dropdown in Asp.net, with different color tag, and you are selecting third or four color? after refreshing, it is selecting only first color only?
+ViewState Not Enabled: If ViewState is disabled for the DropDownList, it will not remember the selected value across postbacks.
+Data Binding on Every Postback: If the DropDownList is being data-bound on every postback without checking IsPostBack, it will reset the selected value.
+
+
+preventDefault()  method working - rok ker rakho
+preventDefault() is a method provided by the Event interface in JavaScript
+. It's used to stop the default action of an event from being executed. 
+This is commonly used in event handling to override the browser's default behavior for certain events.
+
+Common Use Cases:
+Form Submission: Prevent the default form submission action to handle it via JavaScript.
+Link Navigation: Prevent a link (<a>) from navigating to a new URL.
+Context Menus: Prevent the default context menu from appearing on a right-click.
+
+
+preventDefault() prevents the default behavior of an element from happening, while event. 
+stopPropagation() prevents an event from bubbling up the event chain.
+
+Entity Framework - data access with .Net objects from database.
+ Entity Framework (EF) is an Object-Relational Mapper (ORM) for .NET,
+which simplifies data access by allowing you to work with databases using .NET objects
+
+ LINQ (Language Integrated Query) is a query language in 
+.NET that allows you to query collections, databases, XML, and other data sources in a type-safe manner.
+
+
+
+
+what is difference between first and default method?
+First
+Purpose: Retrieves the first element that satisfies a specified condition from a collection.
+
+FirstOrDefault
+Purpose: Retrieves the first element that satisfies a specified condition from a collection, or a default value if no such element is found.
+
+int[] numbers = { 1, 2, 3, 4, 5 };
+int firstEven = numbers.FirstOrDefault(n => n % 2 == 0);  // Returns 2, the first even number
+
+is list me First ese kam krega ki puri array me even hoga toh me us even element ko hi return kr dunga  ager nhi mila even number toh me error dunga
+FirstOrDefault puri array me even hoga toh me us even element ko hi return kr dunga  ager nhi mila toh me default value return kr dungha
+default value of int is 0
+
+
+how will get all input elements in JQuery?
+using each and map loop
+document).ready(function() {
+    $('input').each(function() {
+        console.log($(this).attr('name')); // Logs the name attribute of each input element
+    });
+});
+
+
+
+
+if you have to dynamic setup master page in Asp.net? How you will create it?
+In ASP.NET Web Forms, a master page provides a consistent layout and functionality across multiple pages in a web application. 
+If you need to set up a master page dynamically, it typically involves choosing which master page to use based on certain conditions, 
+such as user preferences, roles, or application settings.
+
+Serialization :Example: Converting a Person object to a JSON string.
+To convert an object (e.g., a class instance) into a format that can be easily sent over HTTP or saved to a file.
+
+
+Deserialization Example: Converting a JSON string back into a Person object.
+Example Code (C#):
+Deserialization is the process of converting data from a format (like JSON or XML) back into an object.
+This allows applications to reconstruct objects from transmitted data or stored data.
+
+
+
+Encoding: Converts data into a format suitable for storage or transmission. Examples include Base64 and URL encoding.
+Decoding: Converts data back from its encoded format to its original form. Examples include Base64 and URL decoding
+
+
+
+Utf - 8 character range 1 byte
+Utf - 16 character range 2 byte
+
+
+
+
+
+Feature	                        REST	                                                                        SOAP
+Protocol	Primarily HTTP	                                                       Primarily HTTP, but can work with other protocols (e.g., SMTP, JMS)
+Architecture Style	             Architectural style	                                    Protocol
+Message Format                     	Typically JSON or XML	                                        XML
+
+Ease of Use	                    Generally simpler and more flexible	            More complex due to strict standards and protocols
+Stateless	            Yes, each request is independent of previous ones	Not necessarily stateless; can maintain state between requests
+Performance	Typically faster due to less overhead (e.g., JSON is lighter than XML)	Slower due to XML overhead and additional processing
+Error Handling	Uses HTTP status codes and custom error messages	Uses standard SOAP fault elements for error handling
+Security	            Relies on underlying protocols (e.g., HTTPS) for security	Built-in security standards (WS-Security) with more robust security features
+Transaction Support	Limited support for transactions	                        Supports distributed transactions with WS-AtomicTransaction
+
+
+SOAP is used in scenarios that require strict standards, 
+advanced security, and reliable messaging.
+It is often used in enterprise environments and legacy systems where robust protocols and extensive features are necessary.
+
+
+Can abstract types be parameterized? Example
+Yes, abstract types can be parameterized. Parameterized abstract types, also known as generic abstract types, 
+allow you to define abstract classes or interfaces that can operate on different data types specified at runtime or compile time. 
+This feature is useful for creating flexible and reusable code.
+
+
+
+Definition: The readonly keyword defines a field that can only be assigned a value at the time of its declaration or in a constructor.
+Once assigned, its value cannot be changed.
+
+
+const: Used for compile-time constants. Must be initialized at the time of declaration and cannot be changed afterward. 
+Typically used for values that are known at compile time and do not change.
+
+readonly: Used for runtime constants. Can be initialized either at the time of declaration or in the constructor.
+Once set, its value cannot be changed. Suitable for values that are assigned at runtime but should remain constant thereafter.
+
+
+
+ // Declare a readonly field 
+
+  public readonly string ConnectionString;
+
+jab tak constructor na banao tab tak ese hi pade rehne do
+run time or consructor banane per hi iske value final hogi aur woh wapas change nhi ho payegi
+
+
+lekin ager const ki baat kru
+toh use declaration ke time per hi value assign krni hoti hai
+yeh compilte time constatnt hai
+
+Application object
+Scope: Application-wide. Data stored in the Application object is available to all users and sessions.
+Data stored in the Application object lasts for the lifetime of the application (i.e., until the application domain is restarted).
+
+Scope: Application-wide, but the data is cached for the duration of its expiration or until it is explicitly removed.
+Lifetime: Data in the cache can have a defined expiration time or be removed based on eviction policies (e.g., memory pressure, cache priorities).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
