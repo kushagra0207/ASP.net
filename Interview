@@ -36,3 +36,24 @@ int unBoxed = (int)boxedVar;
 
 
 14.	What is ASP.Net?
+
+Diffrence between View and Partial 
+
+
+View
+A View is a complete HTML page that is rendered in response to a client request. 
+It typically includes the full layout and all the content required to render a web page.
+
+
+Partial View = return fragments
+
+
+            Feature	View                        	Partial View
+Definition	Complete HTML page                  	HTML fragment
+Use Case	  Full-page rendering	                     Reusable component within a view
+Layout Support	Uses layout pages                	Does not use layout pages by default
+Reusability	Not designed for reuse	           Designed for reuse across multiple views
+Controller Action	Typically associated with a specific        action	Can be called within other views
+Model Binding	Can be strongly typed	                     Can be strongly typed
+Example	Full HTML page with <!DOCTYPE html>	           HTML snippet without <!DOCTYPE html>
+
