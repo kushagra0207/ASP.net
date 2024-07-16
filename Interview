@@ -212,6 +212,10 @@ Scope: Application-wide, but the data is cached for the duration of its expirati
 Lifetime: Data in the cache can have a defined expiration time or be removed based on eviction policies (e.g., memory pressure, cache priorities).
 
 
+UTF stands for Unicode Transformation code
+
+
+
 
 
 
