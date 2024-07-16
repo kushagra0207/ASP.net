@@ -177,6 +177,32 @@ WITH cte_name As (Column1, Column2, Columne3 ) followed query
 
 
 
+Benefits of Using CTEs
+Improved Readability: CTEs make complex queries more readable by breaking them down into simpler parts.
+Recursion: CTEs support recursion, making it easier to work with hierarchical data.
+Reusability: CTEs can be referenced multiple times within the same query.
+
+
+WITH CTE_Name (Column1, Column2, ...)
+AS
+(
+    -- CTE Query Definition
+    SELECT Column1, Column2, ...
+    FROM TableName
+    WHERE Condition
+)
+-- Using the CTE
+SELECT *
+FROM CTE_Name
+
+
+Benefits of Using CTEs
+Improved Readability: CTEs make complex queries more readable by breaking them down into simpler parts.
+Recursion: CTEs support recursion, making it easier to work with hierarchical data.
+Reusability: CTEs can be referenced multiple times within the same query.
+
+
+
 
 
 
