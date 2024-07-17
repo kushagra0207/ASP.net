@@ -258,6 +258,21 @@ dynamic - check variable at run time - variables are checked at run time
 dynamic x = 10;
  x = "her"; // allowed
 
+ViewBag
+Type	Dictionary-like (of type ViewDataDictionary)	Dynamic object
+Uses C# dynamic feature
+
+// In the Controller
+public ActionResult Index()
+{
+    ViewBag.Message = "Hello, World!"; // Single Object
+    return View();
+}
+
+// In the View
+<p>@ViewBag.Message</p>
+
+
 
  
 
