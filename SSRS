@@ -62,6 +62,8 @@ It provides a World Wide Web-based connection for deploying reports. Hence, repo
 SSRS allows reports to be exported in different formats. You can deliver SSRS reports using emails
 SSRS provides a host of security features, which helps you to control, who can access which report.
 
+SSRS With SQL Sockets
+
 
 
 
