@@ -17,6 +17,8 @@ Console.WriteLine(variable);  // Output: Hello, World!
 variable = new { Name = "John", Age = 30 };  // Now an anonymous type
 Console.WriteLine(variable.Name);  // Output: John
 
+Final Value and understanding of the game
+
 
 
 
